@@ -1,0 +1,14 @@
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  show-query:
+    lang: python3-binary
+    handler: ./show-query
+    image: jpauwels/show-query:latest
+    env-file: .env
+    environment:
+      EXTRA_ENV: "value"
+    environment_file:
+     - env.yml
