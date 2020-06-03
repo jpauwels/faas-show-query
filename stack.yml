@@ -4,7 +4,7 @@ provider:
 
 functions:
   show-query:
-    lang: python3-binary
+    lang: python3
     handler: ./show-query
     image: jpauwels/show-query:latest
     env-file: .env
