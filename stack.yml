@@ -7,7 +7,3 @@ functions:
     lang: python3
     handler: ./show-query
     image: jpauwels/show-query:latest
-    environment:
-      EXTRA_ENV: "value"
-    environment_file:
-     - env.yml
